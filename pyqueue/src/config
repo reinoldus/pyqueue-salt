@@ -1,0 +1,6 @@
+Host github
+        Hostname github.com
+        User git
+        Port 22
+        IdentityFile /home/pyqueue/.ssh/keyfiles/git.ssh
+
