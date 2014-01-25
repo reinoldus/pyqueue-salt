@@ -1,0 +1,11 @@
+--- OptionHandlerFactory.cc	2014-01-05 12:55:58.000000000 +0100
++++ OptionHandlerFactoryEdit.cc	2014-01-24 21:09:06.688401137 +0100
+@@ -503,7 +503,7 @@
+                       (PREF_MAX_CONNECTION_PER_SERVER,
+                        TEXT_MAX_CONNECTION_PER_SERVER,
+                        "1",
+-                       1, 16,
++                       1, 100,
+                        'x'));
+     op->addTag(TAG_BASIC);
+     op->addTag(TAG_FTP);

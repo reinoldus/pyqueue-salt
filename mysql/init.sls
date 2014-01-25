@@ -13,6 +13,7 @@ mysql-server:
   mysql_user:
     - present
     - name: root
-    - password: juhg4k68bhrftzuer465FGDkhdtgfz56t56dfgz56H
+    - password: {{ pillar['mysql']['password'] }}
+    - connection_pass: {{ pillar['mysql']['password'] }}
     - require:
       - service: mysql

@@ -7,8 +7,3 @@ python-pkgs:
 
 git:
   pkg.installed
-
-pyqueue:
-  user.present:
-    - home: /home/pyqueue
-
