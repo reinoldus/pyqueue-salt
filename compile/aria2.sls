@@ -3,6 +3,9 @@ mypkgs:
     - pkgs: 
       - g++
       - make
+      - libxml2-dev
+      - libgnutls-dev
+      - openssl
 
 /root/OptionHandlerFactory.diff:
   file.managed:

@@ -6,7 +6,7 @@ messageAndExit ()
 	exit;
 }
 
-if [ ! -f /usr/local/bin/aria2c ]; then
+if [ -f /usr/local/bin/aria2c ]; then
 	cd /root
 	wget http://sourceforge.net/projects/aria2/files/latest/download || messageAndExit "changed=false comment='getting aria2 failed'";
 	mv download aria2.tar.bz2 || messageAndExit "changed=false comment='renaming tar failed'";
@@ -17,7 +17,7 @@ if [ ! -f /usr/local/bin/aria2c ]; then
 	patch < /root/OptionHandlerFactory.diff || messageAndExit "changed=false comment='patching failed'";
 
 	cd ..
-	./configure || messageAndExit "changed=false comment='configure failed'";
+	./configure --without-openssl --with-ca-bundle=/etc/ssl/certs/ca-certificates.crt --with-gnutls || messageAndExit "changed=false comment='configure failed'";
 	make -j 9 || messageAndExit "changed=false comment='make failed'";
 	make install || messageAndExit "changed=false comment='make isntall failed'";
 	
