@@ -1,7 +1,6 @@
 base:
   '*':
     - users
-    - apt
     - compile.aria2
     - compile.ffmpeg
     - nginx
@@ -10,3 +9,6 @@ base:
     - pyqueue
     - pyqueue.github
     - pyqueue.filedescriptor
+
+  'os:Debian':
+    - apt
