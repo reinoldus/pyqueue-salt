@@ -1,0 +1,15 @@
+List all connected minions:
+salt-key -L
+
+Accept new minions:
+salt-key -A
+
+
+Hostname:
+* - all hosts
+single hosts can be seen with salt-key -L
+
+salt '[hostname]' state
+
+Execute single state:
+salt '[hostname]' state.sls [statename]
