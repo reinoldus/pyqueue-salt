@@ -4,7 +4,6 @@ ffmpegpkgs:
       - autoconf
       - automake
       - build-essential
-      - git
       - libass-dev
       - libgpac-dev
       - libtheora-dev
@@ -13,7 +12,6 @@ ffmpegpkgs:
       - libxext-dev
       - pkg-config
       - texi2html
-      - zlib1g-dev
       - nasm
 
 /home/pyqueue/compileFFmpeg.sh:
