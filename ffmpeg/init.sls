@@ -15,4 +15,3 @@ mypkgs:
       - texi2html
       - zlib1g-dev
       - nasm
-      - ffmpeg

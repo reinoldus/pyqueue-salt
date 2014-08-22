@@ -15,7 +15,6 @@ ffmpegpkgs:
       - texi2html
       - zlib1g-dev
       - nasm
-      - ffmpeg
 
 /home/pyqueue/compileFFmpeg.sh:
   file.managed:
