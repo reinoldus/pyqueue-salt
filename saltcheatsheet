@@ -4,6 +4,8 @@ salt-key -L
 Accept new minions:
 salt-key -A
 
+Remove minion:
+salt-key -d [hostname]
 
 Hostname:
 * - all hosts
