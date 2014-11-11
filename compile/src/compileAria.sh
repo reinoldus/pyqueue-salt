@@ -6,7 +6,7 @@ messageAndExit ()
 	exit;
 }
 
-if [ -f /usr/local/bin/aria2c ]; then
+if [ ! -f /usr/local/bin/aria2c ]; then
 	cd /root
 	wget http://sourceforge.net/projects/aria2/files/latest/download || messageAndExit "result=false changed=false comment='getting aria2 failed'";
 	mv download aria2.tar.bz2 || messageAndExit "result=false changed=false comment='renaming tar failed'";
