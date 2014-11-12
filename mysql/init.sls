@@ -10,10 +10,11 @@ mysql-server:
     - enable: True
     - require:
       - pkg: mysql-server
-  mysql_user:
-    - present
-    - name: root
-    - password: {{ pillar['mysql']['password'] }}
-    - connection_pass: {{ pillar['mysql']['password'] }}
-    - require:
-      - service: mysql
+#  mysql_user:
+#    - present
+#    - name: root
+#    - password: ''
+#    - connection_pass: ''
+#    - allowpassword_less: True
+#    - require:
+#      - service: mysql

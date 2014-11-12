@@ -5,6 +5,7 @@ mypkgs:
       - make
       - libxml2-dev
       - libgnutls-dev
+      - gnutls-bin
       - openssl
 
 /root/OptionHandlerFactory.diff:
